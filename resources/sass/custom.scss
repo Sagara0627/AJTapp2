@@ -1,0 +1,10 @@
+// システム全体の定数を定義
+@import 'custom/variables';
+// システム全体の共通処理を定義
+@import 'custom/mixin';
+// システム全体で使用する要素に適用するレイアウトを定義
+@import 'custom/custom';
+// ヘッダー
+@import 'custom/header';
+// フッター
+@import 'custom/footer';

@@ -11,8 +11,8 @@
     <title>Attractive Japan Tours</title>
 </head>
 <body>
-    <header>
-        <h2>ヘッダー</h2>
+    <header id="header">
+        @include('layouts.partials.header')
     </header>
 
     <main>
@@ -20,7 +20,7 @@
     </main>
 
     <footer class="mt-5 pb-5">
-        <h2>フッター</h2>
+        @include('layouts.partials.footer')
     </footer>
 </body>
 </html>

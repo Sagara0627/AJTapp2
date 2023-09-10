@@ -1,0 +1,11 @@
+#header {
+    height: 50vh;
+    background-size: cover;
+    background-image: url('/public/images/top_main_0322_1.jpg');
+    background-position: center center;
+    padding: 1rem 0;
+
+    .icon-wrapper {
+        @include site-icon(2.5rem, 2.5rem, 2rem);
+    }
+}
