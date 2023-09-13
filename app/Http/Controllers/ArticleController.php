@@ -9,6 +9,8 @@ class ArticleController extends Controller
     // トップページ
     public function index()
     {
-        return view('article.index');
+        return view('article.index', [
+            'config' => config('consts.articles'),
+        ]);
     }
 }

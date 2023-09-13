@@ -11,12 +11,14 @@
     <title>Attractive Japan Tours</title>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="d-flex flex-column justify-content-between">
         @include('layouts.partials.header')
     </header>
 
     <main>
-        @yield('content')
+        <div class="inner">
+            @yield('content')
+        </div>
     </main>
 
     <footer class="mt-5 pb-5">
