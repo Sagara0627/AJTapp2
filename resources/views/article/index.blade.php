@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('genre')日本食@endsection
+
 @section('content')
     <section id="articles" class="w-75 m-auto p-2">
         @foreach ($config['ranking'] as $rank => $items)
@@ -13,11 +15,16 @@
                         <div class="card-body bg-white">
                             @foreach ($items as $key => $name)
                                 @if ($key !== 'genre')
-                                    @component('article.components.index_card')
-                                        @slot('faClass', $config['fa-class'][$key])
-                                        @slot('key', $key)
-                                        @slot('name', $name)
-                                    @endcomponent
+                                    <div class="d-flex align-items-center">
+                                        <div class="body-icon">
+                                            <i class="w-100 fa-solid {{ $config['fa-class'][$key] }}"></i>
+                                        </div>
+                                        @if ($key === 'website')
+                                            <a href="{{ route('article.show', $rank) }}" class="card-text">{{ $name }}</a>
+                                        @else
+                                            <p class="card-text">{{ $name }}</p>
+                                        @endif
+                                    </div>
                                 @endif
                             @endforeach
                         </div>

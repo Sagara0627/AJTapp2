@@ -3,8 +3,8 @@
         <i class="w-100 fa-solid {{ $faClass }}"></i>
     </div>
     @if ($key === 'website')
-        <a href="#" class="card-text">{{ $name }}</a>
+        <a href="#" class="card-text">ホームページ</a>
     @else
-        <p class="card-text">{{ $name }}</p>
+        <p class="card-text">{{ $value }}</p>
     @endif
 </div>

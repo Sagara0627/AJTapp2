@@ -18,3 +18,4 @@ use App\Http\Controllers\ArticleController;
 //     return view('welcome');
 // });
 Route::get('/', [ArticleController::class, 'index'])->name('article.index');
+Route::get('/{rank}', [ArticleController::class, 'show'])->name('article.show');
