@@ -7,7 +7,7 @@
                 <div class="card-header">{{ $rank + 1 }}位 {{ $items['genre'] }}</div>
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt="">
+                        <img src="{{ asset('storage/img/yakiniku.jpg') }}" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body bg-white">
