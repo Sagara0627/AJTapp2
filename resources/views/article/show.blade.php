@@ -6,10 +6,10 @@
     <section id="articles" class="w-75 m-auto p-2">
         @for ($i = 1; $i <= 10; $i++)
             <div class="card mb-3">
-                <div class="card-header">{{ $i }}位 {{ $config['genre'] . $i }}</div>
-                <div class="row g-0">
+                <div class="card-header" id="rank-{{ $i }}">{{ $i }}位 {{ $config['genre'] . $i }}</div>
+                <div class="row g-0 overflow-hidden" style="max-height: 14rem">
                     <div class="col-md-4">
-                        <img src="{{ asset('storage/img/yakiniku.jpg') }}" alt="">
+                        <img src="{{ asset('storage/img/' . $files[$i]) }}" alt="" class="w-100">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body bg-white">
