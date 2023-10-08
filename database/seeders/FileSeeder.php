@@ -16,14 +16,14 @@ class FileSeeder extends Seeder
         $fileNames = [
             'sushi',
             'ramen',
-            'yakiniku',
-            'soba',
-            'udon',
-            'curry',
+            'sashimi',
             'tenpura',
-            'ChineseDumpling',
-            'kaisen',
+            'udon',
+            'soba',
             'okonomiyaki',
+            'yakitori',
+            'raceBall',
+            'syabusyabu',
         ];
 
         // ジャンル別ランキングサイトに表示する画像を登録
