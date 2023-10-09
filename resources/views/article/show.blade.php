@@ -1,31 +1,54 @@
 @extends('layouts.app')
 
-@section('genre'){{ $config['genre'] }}@endsection
+@section('genre'){{ $rank->genre_name }}@endsection
 
 @section('content')
     <section id="articles" class="w-75 m-auto p-2">
-        @for ($i = 1; $i <= 10; $i++)
+        @foreach ($restaurants as $restaurant)
             <div class="card mb-3">
-                <div class="card-header" id="rank-{{ $i }}">{{ $i }}位 {{ $config['genre'] . $i }}</div>
+                <div class="card-header" id="rank-{{ $restaurant->rank }}">{{ $restaurant->rank }}位 {{ $restaurant->name }}</div>
                 <div class="row g-0 overflow-hidden" style="max-height: 14rem">
                     <div class="col-md-4">
-                        <img src="{{ asset('storage/img/' . $files[$i]) }}" alt="" class="w-100">
+                        <img src="{{ asset('storage/img/' . $restaurant->file_name) }}" alt="" class="w-100">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body bg-white">
-                            @foreach ($config as $key => $value)
-                                @if ($key !== 'genre')
-                                    @component('article.components.card')
-                                        @slot('faClass', config('consts.articles.fa-class')[$key] ?? null)
-                                        @slot('key', $key)
-                                        @slot('value', $value)
-                                    @endcomponent
+                            {{-- 店名 --}}
+                            <div class="d-flex align-items-center">
+                                <div class="body-icon">
+                                    <i class="w-100 fa-solid fa-shop"></i>
+                                </div>
+                                <p class="card-text">{{ $restaurant->name }}</p>
+                            </div>
+                            {{-- 最寄駅 --}}
+                            <div class="d-flex align-items-center">
+                                <div class="body-icon">
+                                    <i class="w-100 fa-solid fa-train-subway"></i>
+                                </div>
+                                <p class="card-text">{{ $restaurant->nearest_station }}</p>
+                            </div>
+                            {{-- 住所 --}}
+                            <div class="d-flex align-items-center">
+                                <div class="body-icon">
+                                    <i class="w-100 fa-solid fa-location-dot"></i>
+                                </div>
+                                <p class="card-text">{{ $restaurant->prefecture . $restaurant->city . $restaurant->street }}</p>
+                            </div>
+                            {{-- ホームページ --}}
+                            <div class="d-flex align-items-center">
+                                <div class="body-icon">
+                                    <i class="w-100 fa-solid fa-house"></i>
+                                </div>
+                                @if ($restaurant->website)
+                                    <a href="{{ $restaurant->website }}" class="card-text">{{ $restaurant->website ?? '-' }}</a>
+                                @else
+                                    -
                                 @endif
-                            @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        @endfor
+        @endforeach
     </section>
 @endsection

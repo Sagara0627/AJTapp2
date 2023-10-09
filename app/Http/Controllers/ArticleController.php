@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\File;
+use App\Models\Rank;
 
 class ArticleController extends Controller
 {
@@ -12,11 +13,12 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $files = File::where('file_type', File::OUTSIDE_GENRE)
-            ->pluck('file_path', 'rank');
+        $ranks = Rank::with('restaurants')
+            ->orderBy('rank', 'asc')
+            ->get();
 
         return view('article.index', [
-            'files' => $files,
+            'ranks' => $ranks,
             'config' => config('consts.articles'),
         ]);
     }
@@ -24,17 +26,17 @@ class ArticleController extends Controller
     /**
      * 各ジャンルのランキングページ
      *
-     * @param int $rank
+     * @param int $rankNum 順位
      */
-    public function show($rank)
+    public function show($rankNum)
     {
-        $files = File::where('file_type', File::WITHIN_GENRE)
-            ->where('genre_rank', $rank)
-            ->pluck('file_path', 'rank');
+        $rank = Rank::where('rank', $rankNum)
+            ->with('restaurants')
+            ->first();
 
         return view('article.show', [
-            'files' => $files,
-            'config' => config('consts.articles.ranking')[$rank],
+            'rank' => $rank,
+            'restaurants' => $rank->restaurants,
         ]);
     }
 }
