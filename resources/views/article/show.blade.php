@@ -33,7 +33,7 @@
                                 <div class="body-icon">
                                     <i class="w-100 fa-solid fa-location-dot"></i>
                                 </div>
-                                <p class="card-text">{{ $restaurant->prefecture . $restaurant->city . $restaurant->street }}</p>
+                                <p class="card-text">{{ $restaurant->address }}</p>
                             </div>
                             {{-- ホームページ --}}
                             <div class="d-flex align-items-center">
