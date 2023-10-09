@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('files', function (Blueprint $table) {
+        Schema::create('ranks', function (Blueprint $table) {
             $table->id();
-            $table->string('genre', 255)->comment('ジャンル');
-            $table->integer('genre_rank')->comment('ジャンル順位');
-            $table->text('file_path')->comment('ファイルパス');
-            $table->integer('file_type')->comment('ファイル種別');
             $table->integer('rank')->comment('順位');
+            $table->string('genre_name', 255)->comment('ジャンル名');
+            $table->string('file_name', 255)->comment('ファイル名');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('files');
+        Schema::dropIfExists('ranks');
     }
 };
