@@ -7,7 +7,7 @@
         <p class="text-end">{{ Carbon\Carbon::now()->format('Y年m月d日') }}時点</p>
         @foreach ($ranks as $rank)
             <div class="card mb-3">
-                <div class="card-header">{{ $rank->rank }}位 {{ $rank->genre_name }}</div>
+                <div class="card-header fw-bold">{{ $rank->rank }}位 {{ $rank->genre_name }}</div>
                 <div class="row g-0 overflow-hidden" style="max-height: 14rem">
                     <div class="col-md-4">
                         <img src="{{ asset('storage/img/' . $rank->file_name) }}" alt="" class="w-100">
