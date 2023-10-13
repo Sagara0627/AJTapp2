@@ -18,7 +18,6 @@ class ArticleController extends Controller
 
         return view('article.index', [
             'ranks' => $ranks,
-            'config' => config('consts.articles'),
         ]);
     }
 
