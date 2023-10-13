@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\File;
 use App\Models\Rank;
 
 class ArticleController extends Controller
