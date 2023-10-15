@@ -6,9 +6,6 @@
             </div>
             <h2 class="mb-0 ms-2">Attractive Japan Tours</h2>
         </div>
-        <div class="links">
-            <a href="#">無料会員登録/ログイン</a>
-        </div>
     </div>
 </div>
 <div class="bg-secondary bg-opacity-75 text-white fw-bold h-25 d-flex align-items-center">
