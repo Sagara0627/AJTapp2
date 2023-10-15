@@ -34,7 +34,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '渋谷区',
                     'street' => '東１丁目２６−３１ 大島ビル Ｂ１Ｆ',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/bWid3MDaFaKPBSTX8',
                     'file_name' => 'sushi.jpg',
                 ],
                 3 => [
@@ -44,7 +44,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '新宿区',
                     'street' => '四谷１丁目１１ 陽臨堂ビル 1F',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/ZpzGKW5xqVXbyTzk7',
                     'file_name' => 'sushi.jpg',
                 ],
                 4 => [
@@ -114,7 +114,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '港区',
                     'street' => '六本木１丁目４−５ アークヒルズ サウスタワー 1F',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/MnpC1Zcf9eLm9xDY8',
                     'file_name' => 'sushi.jpg',
                 ],
             ],
@@ -166,7 +166,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '港区',
                     'street' => '三田２丁目１６−４',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/hLMzogmdXXf16bEX7',
                     'file_name' => 'ramen.jpg',
                 ],
                 6 => [
@@ -370,7 +370,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '杉並区',
                     'street' => '高円寺北３丁目２２−７',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/17f1xgtRKivZtK4Y7',
                     'file_name' => 'tenpura.jpg',
                 ],
                 6 => [
@@ -390,7 +390,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '中央区',
                     'street' => '京橋２丁目５−２ Ａ・Ｍ京橋ビル',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/cd7AvGSjAbv9ri5U9',
                     'file_name' => 'tenpura.jpg',
                 ],
                 8 => [
@@ -400,7 +400,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '板橋区',
                     'street' => '小豆沢１丁目６−１６ 天鈴',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/CAbQH8siRkY7nrZz5',
                     'file_name' => 'tenpura.jpg',
                 ],
                 9 => [
@@ -420,7 +420,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '港区',
                     'street' => '南青山６丁目１−６',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/uC1uyw42MdDN552q8',
                     'file_name' => 'tenpura.jpg',
                 ],
             ],
@@ -462,7 +462,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '中野区',
                     'street' => '中野５丁目５２−１５ B1',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/XpqU2nukjUK78qTG7',
                     'file_name' => 'udon.jpg',
                 ],
                 5 => [
@@ -472,7 +472,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '千代田区',
                     'street' => '神田小川町３丁目１６−１ ニュー駿河台ビル 1F',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/JnAybAcYT6mSaMaB8',
                     'file_name' => 'udon.jpg',
                 ],
                 6 => [
@@ -512,7 +512,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '渋谷区',
                     'street' => '神宮前４丁目２８−２６ 木村ビル １階',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/AbkUCanzxbcdkjhFA',
                     'file_name' => 'udon.jpg',
                 ],
                 10 => [
@@ -554,7 +554,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '新宿区',
                     'street' => '神楽坂３丁目６ 神楽坂館１階',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/nA9kGEFGQEcDMrFC6',
                     'file_name' => 'soba.jpg',
                 ],
                 4 => [
@@ -564,7 +564,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '練馬区',
                     'street' => '中村２丁目５−１１',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/vkfhMmaRifUgqqPP8',
                     'file_name' => 'soba.jpg',
                 ],
                 5 => [
@@ -574,7 +574,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '渋谷区',
                     'street' => '本町１丁目２−３ 松海ビル 1F',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/rZFbsdepk3bbvk9R8',
                     'file_name' => 'soba.jpg',
                 ],
                 6 => [
@@ -666,7 +666,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '台東区',
                     'street' => '上野2-2-3 コロンビアビル B1F',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/vrCgt4DN1tRTVZsu7',
                     'file_name' => 'okonomiyaki.jpg',
                 ],
                 5 => [
@@ -726,7 +726,7 @@ class RestaurantSeeder extends Seeder
                     'prefecture' => '東京都',
                     'city' => '新宿区',
                     'street' => '新宿3-7-5 一兆ビル　３Ｆ・４Ｆ',
-                    'website' => null,
+                    'website' => 'https://maps.app.goo.gl/PuzmkzVEaJQRLpXcA',
                     'file_name' => 'okonomiyaki.jpg',
                 ],
             ],
