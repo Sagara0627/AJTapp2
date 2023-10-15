@@ -22,7 +22,7 @@ class RankSeeder extends Seeder
             ['そば' => 'soba'],
             ['お好み焼き' => 'okonomiyaki'],
             ['焼き鳥' => 'yakitori'],
-            ['おにぎり' => 'raceBall'],
+            ['おにぎり' => 'riceBall'],
             ['しゃぶしゃぶ' => 'syabusyabu'],
         ];
 
