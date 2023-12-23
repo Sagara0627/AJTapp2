@@ -19,3 +19,4 @@ use App\Http\Controllers\ArticleController;
 // });
 Route::get('/', [ArticleController::class, 'index'])->name('article.index');
 Route::get('/{rank}', [ArticleController::class, 'show'])->name('article.show');
+Route::get('/youtube/{channelId}', [ArticleController::class, 'index2'])->name('article.youtube.index');
